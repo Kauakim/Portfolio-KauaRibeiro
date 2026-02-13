@@ -1500,11 +1500,14 @@ section {
 
     .experience-badge {
         position: absolute;
-        bottom: 10px;
-        left: 140px;
+        top: 150px;
+        right: -25px;
+        bottom: auto;
+        left: auto;
         margin-top: 0;
         width: auto;
-        max-width: 250px;
+        max-width: 125px;
+        padding: 15px;
     }
 
     .about-info {
