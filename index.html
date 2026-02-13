@@ -5,167 +5,567 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kauã Ribeiro - Portfólio</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Kauã Ribeiro</h1>
-        <nav>
-            <a href="#home">Início</a>
-            <a href="#about">Sobre Mim</a>
-            <a href="#projects">Projetos</a>
-            <a href="#services">Serviços</a>
-            <a href="#contact">Contato</a>
-        </nav>
+    <header id="header">
+        <div class="header-container">
+            <a href="#home" class="logo"><span>Kauã Ribeiro</span></a>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link active">Início</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#timeline" class="nav-link">Linha do Tempo</a>
+                <a href="#technologies" class="nav-link">Tecnologias</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#skills" class="nav-link">Habilidades</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
 
     <main>
-        <section id="home">
-            <h2>FullStack Dev and Telecom Technical</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur laborum saepe, in error ipsum aspernatur.</p>
-            <div class="social-links">
-                <a href="#">GitHub</a>
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">WhatsApp</a>
+        <section id="home" class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <span class="hero-greeting">Olá, meu nome é</span>
+                <h1 class="hero-title">Kauã Ribeiro</h1>
+                <h2 class="hero-subtitle">
+                    <span class="typing-text">FullStack Developer</span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Desenvolvedor FullStack e Técnico em Telecomunicações, apaixonado por tecnologia e pela criação de soluções inovadoras.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Meus Projetos</a>
+                    <a href="https://wa.me/55359998260834" target="_blank" class="btn btn-secondary">WhatsApp</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Kauakim" target="_blank" aria-label="GitHub" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kaua-ribeiro17/" target="_blank" aria-label="LinkedIn" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/_kaua_rib/" target="_blank" aria-label="Instagram" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/55359998260834" target="_blank" aria-label="WhatsApp" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-arrow"></div>
             </div>
         </section>
 
-        <section id="about">
-            <h2>Sobre Mim</h2>
-            <div class="about-content">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus recusandae ipsum laborum deleniti officia distinctio eum adipisci provident, voluptate ullam?</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus recusandae ipsum laborum deleniti officia distinctio eum adipisci provident, voluptate ullam?</p>
-                <button>Contate-me</button>
-                <img src="" alt="Foto de Kauã Ribeiro">
-            </div>
-        </section>
-
-        <section id="timeline">
-            <div class="experience">
-                <h3>Experiência</h3>
-                <p>Desenvolvedor Junior (PD Soluções)</p>
-                <p>Desenvolvedor Junior</p>
-            </div>
-            <div class="education">
-                <h3>Educação</h3>
-                <p>Casa Viva</p>
-                <p>ETE-FMC</p>
-                <p>INATEL</p>
-            </div>
-        </section>
-
-        <section id="projects">
-            <div class="technologies">
-                <h3>Tecnologias</h3>
-                <p>SVGS</p>
-            </div>
-
-            <h2>Projetos</h2>
-            <article class="project">
-                <h3>Estação Genesis</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aut, perspiciatis incidunt at, minima unde placeat rerum ad adipisci quisquam, excepturi voluptatum numquam veniam nulla sint facere quos dolore laudantium!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab iusto facere aut inventore officia, aliquam ipsam nihil sequi voluptatem possimus.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ex dicta sapiente nemo quam? Earum natus ad neque facilis est.</p>
-                <a href="#">Link do projeto</a>
-                <a href="#">Link do repositório</a>
-                <p>Lista de tecnologias utilizadas</p>
-                <img src="" alt="Imagem do projeto Estação Genesis">
-            </article>
-            <article class="project">
-                <h3>Estação Genesis</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aut, perspiciatis incidunt at, minima unde placeat rerum ad adipisci quisquam, excepturi voluptatum numquam veniam nulla sint facere quos dolore laudantium!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab iusto facere aut inventore officia, aliquam ipsam nihil sequi voluptatem possimus.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ex dicta sapiente nemo quam? Earum natus ad neque facilis est.</p>
-                <a href="#">Link do projeto</a>
-                <a href="#">Link do repositório</a>
-                <p>Lista de tecnologias utilizadas</p>
-                <img src="" alt="Imagem do projeto Estação Genesis">
-            </article>
-            <article class="project">
-                <h3>Estação Genesis</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aut, perspiciatis incidunt at, minima unde placeat rerum ad adipisci quisquam, excepturi voluptatum numquam veniam nulla sint facere quos dolore laudantium!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab iusto facere aut inventore officia, aliquam ipsam nihil sequi voluptatem possimus.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ex dicta sapiente nemo quam? Earum natus ad neque facilis est.</p>
-                <a href="#">Link do projeto</a>
-                <a href="#">Link do repositório</a>
-                <p>Lista de tecnologias utilizadas</p>
-                <img src="" alt="Imagem do projeto Estação Genesis">
-            </article>
-
-            <button> See more</button>
-        </section>
-
-        <section id="habilities">
-            <div class="skills">
-                <div class="skill-box">
-                    <p>SVG</p> 
-                    <p>Comunicação</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="skill-box">
-                    <p>SVG</p> 
-                    <p>Comunicação</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="skill-box">
-                    <p>SVG</p> 
-                    <p>Comunicação</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="skill-box">
-                    <p>SVG</p> 
-                    <p>Comunicação</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="skill-box">
-                    <p>SVG</p> 
-                    <p>Comunicação</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title"><span>Sobre Mim</span></h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-wrapper">
+                            <img src="./assets/img/FotoDePerfil.jpg" alt="Kauã Ribeiro - Desenvolvedor FullStack" class="profile-photo">
+                        </div>
+                        <div class="experience-badge">
+                            <span class="years">2+</span>
+                            <span class="text">Anos de<br>Experiência</span>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3>Desenvolvedor FullStack & Técnico em Telecomunicações</h3>
+                        <p>
+                            Atuo como desenvolvedor de software back-end na DevSw e sou graduando em Engenharia de Software no INATEL, onde também atuo como monitor em algumas disciplinas. 
+                            Minha jornada na programação começou há alguns anos e desde então é guiada pela aplicação prática do conhecimento em projetos reais, sempre buscando soluções eficientes, bem estruturadas e com impacto tecnológico.
+                        </p>
+                        <p>
+                            Hoje, concentro meus esforços no desenvolvimento de projetos que unem software, redes, sistemas embarcados e inteligência artificial, então sinta-se à vontade para entrar em contato caso queira trabalhar comigo ou trocar experiências.
+                        </p>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <span class="info-label">Nome:</span>
+                                <span class="info-value">Kauã de Oliveira Ribeiro</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Email:</span>
+                                <span class="info-value">kauasantarita@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Localização:</span>
+                                <span class="info-value">Santa Rita do Sapucaí, MG, Brasil</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Disponível:</span>
+                                <span class="info-value available">Freelances</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/55359998260834" target="_blank" class="btn btn-primary">Enviar WhatsApp</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="services">
-            <h2>Meus Serviços</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-            <p>Servico 1</p>
-            <p>Servico 2</p>
-            <p>Servico 3</p>
-
-            <p>Número de Projetos</p>
-            <p>Clientes Satisfeitos</p>
-            <p>Feedback Positivo</p>
+        <section id="timeline" class="timeline">
+            <div class="container">
+                <h2 class="section-title"><span>Linha do Tempo</span></h2>
+                <div class="timeline-grid">
+                    <div class="timeline-column">
+                        <h3 class="timeline-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+                            </svg>
+                            Experiência
+                        </h3>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2024 - Presente</span>
+                                    <h4>Desenvolvedor Junior</h4>
+                                    <p>PD Soluções</p>
+                                    <span class="timeline-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus repudiandae libero, tempore dolorum, architecto voluptas velit cumque, laborum cupiditate mollitia perspiciatis fugiat harum sit officia vel est ullam. Perferendis, nemo.</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2025 - Presente</span>
+                                    <h4>Monitor</h4>
+                                    <p>INATEL - Instituto Nacional de Telecomunicações</p>
+                                    <span class="timeline-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus repudiandae libero, tempore dolorum, architecto voluptas velit cumque, laborum cupiditate mollitia perspiciatis fugiat harum sit officia vel est ullam. Perferendis, nemo.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-column">
+                        <h3 class="timeline-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                            </svg>
+                            Educação
+                        </h3>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2025 - Presente</span>
+                                    <h4>Engenharia de Software</h4>
+                                    <p>INATEL - Instituto Nacional de Telecomunicações</p>
+                                    <span class="timeline-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At totam debitis, itaque dolor laborum asperiores perferendis fugit ea doloribus rerum sunt voluptates temporibus, quam placeat beatae! Quis, ratione reprehenderit temporibus repellat, officiis tempora quae sunt blanditiis aut, recusandae tempore fuga?</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2022 - 2024</span>
+                                    <h4>Técnico em Telecomunicações</h4>
+                                    <p>ETE-FMC</p>
+                                    <span class="timeline-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sapiente nemo soluta eveniet temporibus, itaque exercitationem quasi corrupti hic cumque, possimus perspiciatis accusantium quis saepe commodi magnam iste molestias aspernatur laboriosam ab facilis nihil! Ipsa qui corrupti libero iusto explicabo?</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">2023 - 2023</span>
+                                    <h4>Alfabetização Tecnológica</h4>
+                                    <p>Cas@Viva - INATEL</p>
+                                    <span class="timeline-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nam libero eius sed. Veritatis autem incidunt ea libero dolor nulla quis blanditiis, maiores molestias. Accusamus esse odit magni nesciunt, repellendus at consectetur quis sapiente ratione dignissimos dolorum quia deleniti, aspernatur quas cumque fuga. Facilis a consequuntur, et praesentium sunt vel.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Contato</h2>
-            <form>
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name">
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-
-                <label for="phone">Telefone:</label>
-                <input type="tel" id="phone" name="phone">
-
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message"></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-
-            <p>Wpp</p>
-            <p>Instagram</p>
-            <p>GitHub</p>
-            <p>LinkedIn</p>
+        <section id="technologies" class="technologies">
+            <div class="container">
+                <h2 class="section-title">Minhas <span>tecnologias</span></h2>
+                <div class="tech-grid">
+                    <div class="tech-item" data-tooltip="Python">
+                        <svg viewBox="0 0 128 128" width="50" height="50">
+                            <linearGradient id="python-original-a" gradientUnits="userSpaceOnUse" x1="70.252" y1="1237.476" x2="170.659" y2="1151.089" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#5A9FD4"></stop><stop offset="1" stop-color="#306998"></stop></linearGradient><linearGradient id="python-original-b" gradientUnits="userSpaceOnUse" x1="209.474" y1="1098.811" x2="173.62" y2="1149.537" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#FFD43B"></stop><stop offset="1" stop-color="#FFE873"></stop></linearGradient><path fill="url(#python-original-a)" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z" transform="translate(0 10.26)"></path><path fill="url(#python-original-b)" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z" transform="translate(0 10.26)"></path>
+                        </svg>
+                    </div>
+                    <div class="tech-item" data-tooltip="TensorFlow">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128" width="50" height="50"><path d="m61.55 128-21.84-12.68V40.55L6.81 59.56l.08-28.32L61.55 0zM66.46 0v128l21.84-12.68V79.31l16.49 9.53-.1-24.63-16.39-9.36v-14.3l32.89 19.01-.08-28.32z" fill="#ff6f00" /></svg>
+                    </div>
+                    <div class="tech-item" data-tooltip="JavaScript">
+                        <svg viewBox="0 0 128 128" width="50" height="50">
+                            <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path>
+                            <path fill="#323330" d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"></path>
+                        </svg>
+                    </div>
+                    <div class="tech-item" data-tooltip="Node.js">
+                        <svg viewBox="0 0 128 128" width="50" height="50">
+                            <path fill="#83CD29" d="M112.771 30.334L68.674 4.729c-2.781-1.584-6.402-1.584-9.205 0L14.901 30.334C12.031 31.985 10 35.088 10 38.407v51.142c0 3.319 2.084 6.423 4.954 8.083l11.775 6.688c5.628 2.772 7.617 2.772 10.178 2.772 8.333 0 13.093-5.039 13.093-13.828v-50.49c0-.713-.371-1.774-1.071-1.774h-5.623c-.712 0-2.306 1.061-2.306 1.773v50.49c0 3.896-3.524 7.773-10.11 4.48L18.723 90.73c-.424-.23-.723-.693-.723-1.181V38.407c0-.482.555-.966.982-1.213l44.424-25.561c.415-.235 1.025-.235 1.439 0l43.882 25.555c.42.253.272.722.272 1.219v51.142c0 .488.183.963-.232 1.198l-44.086 25.576c-.378.227-.847.227-1.261 0l-11.307-6.749c-.341-.198-.746-.269-1.073-.086-3.146 1.783-3.726 2.02-6.677 3.043-.726.253-1.797.692.41 1.929l14.798 8.754a9.294 9.294 0 004.647 1.246c1.642 0 3.25-.426 4.667-1.246l43.885-25.582c2.87-1.672 4.23-4.764 4.23-8.083V38.407c0-3.319-1.36-6.414-4.229-8.073zM77.91 81.445c-11.726 0-14.309-3.235-15.17-9.066-.1-.628-.633-1.379-1.272-1.379h-5.731c-.709 0-1.279.86-1.279 1.566 0 7.466 4.059 16.512 23.453 16.512 14.039 0 22.088-5.455 22.088-15.109 0-9.572-6.467-12.084-20.082-13.886-13.762-1.819-15.16-2.738-15.16-5.962 0-2.658 1.184-6.203 11.374-6.203 9.105 0 12.461 1.954 13.842 8.091.118.577.645 1.13 1.255 1.13h5.764c.354 0 .701-.272.883-.531.19-.271.258-.634.215-.988-.79-9.329-7.036-13.669-21.958-13.669-12.555 0-20.044 5.311-20.044 14.206 0 9.651 7.469 12.319 19.572 13.51 14.493 1.42 15.679 3.521 15.679 6.357 0 4.952-3.978 7.065-13.429 7.065z"></path>
+                        </svg>
+                    </div>
+                    <div class="tech-item" data-tooltip="HTML5">
+                        <svg viewBox="0 0 128 128" width="50" height="50">
+                            <path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"></path>
+                            <path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"></path>
+                            <path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"></path>
+                            <path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"></path>
+                        </svg>
+                    </div>
+                    <div class="tech-item" data-tooltip="CSS3">
+                        <svg viewBox="0 0 128 128" width="50" height="50">
+                            <path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543z"></path>
+                            <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16z"></path>
+                            <path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95z"></path>
+                            <path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018z"></path>
+                            <path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881z"></path>
+                            <path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711zm-.047 27.994v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711z"></path>
+                        </svg>
+                    </div>
+                    <div class="tech-item" data-tooltip="C++">
+                        <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" width="50" height="50"><path fill="#ff6f00" d="M118.766 95.82c.89-1.543 1.441-3.28 1.441-4.843V36.78c0-1.558-.55-3.297-1.441-4.84l-55.32 31.94Zm0 0"/><path fill="#004482" d="m68.36 126.586 46.933-27.094c1.352-.781 2.582-2.129 3.473-3.672l-55.32-31.94L8.12 95.82c.89 1.543 2.121 2.89 3.473 3.672l46.933 27.094c2.703 1.562 7.13 1.562 9.832 0Zm0 0"/><path fill="#659ad2" d="M118.766 31.941c-.891-1.546-2.121-2.894-3.473-3.671L68.359 1.172c-2.703-1.563-7.129-1.563-9.832 0L11.594 28.27C8.89 29.828 6.68 33.66 6.68 36.78v54.196c0 1.562.55 3.3 1.441 4.843L63.445 63.88Zm0 0"/><path fill="#fff" d="M63.445 26.035c-20.867 0-37.843 16.977-37.843 37.844s16.976 37.844 37.843 37.844c13.465 0 26.024-7.247 32.77-18.91L79.84 73.335c-3.38 5.84-9.66 9.465-16.395 9.465-10.433 0-18.922-8.488-18.922-18.922 0-10.434 8.49-18.922 18.922-18.922 6.73 0 13.017 3.629 16.39 9.465l16.38-9.477c-6.75-11.664-19.305-18.91-32.77-18.91zM92.88 57.57v4.207h-4.207v4.203h4.207v4.207h4.203V65.98h4.203v-4.203h-4.203V57.57H92.88zm15.766 0v4.207h-4.204v4.203h4.204v4.207h4.207V65.98h4.203v-4.203h-4.203V57.57h-4.207z"/></svg>
+                    </div>
+                    <div class="tech-item" data-tooltip="C">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="50" height="50"><path fill="#659AD3" d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"/><path fill="#03599C" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"/><path fill="#fff" d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"/></svg>
+                    </div>
+                    <div class="tech-item" data-tooltip="SQL">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="50" height="50"><path fill="#00618A" d="M116.948 97.807c-6.863-.187-12.104.452-16.585 2.341-1.273.537-3.305.552-3.513 2.147.7.733.809 1.829 1.365 2.731 1.07 1.73 2.876 4.052 4.488 5.268 1.762 1.33 3.577 2.751 5.465 3.902 3.358 2.047 7.107 3.217 10.34 5.268 1.906 1.21 3.799 2.733 5.658 4.097.92.675 1.537 1.724 2.732 2.147v-.194c-.628-.8-.79-1.898-1.366-2.733l-2.537-2.537c-2.48-3.292-5.629-6.184-8.976-8.585-2.669-1.916-8.642-4.504-9.755-7.609l-.195-.195c1.892-.214 4.107-.898 5.854-1.367 2.934-.786 5.556-.583 8.585-1.365l4.097-1.171v-.78c-1.531-1.571-2.623-3.651-4.292-5.073-4.37-3.72-9.138-7.437-14.048-10.537-2.724-1.718-6.089-2.835-8.976-4.292-.971-.491-2.677-.746-3.318-1.562-1.517-1.932-2.342-4.382-3.511-6.633-2.449-4.717-4.854-9.868-7.024-14.831-1.48-3.384-2.447-6.72-4.293-9.756-8.86-14.567-18.396-23.358-33.169-32-3.144-1.838-6.929-2.563-10.929-3.513-2.145-.129-4.292-.26-6.438-.391-1.311-.546-2.673-2.149-3.902-2.927C17.811 4.565 5.257-2.16 1.633 6.682c-2.289 5.581 3.421 11.025 5.462 13.854 1.434 1.982 3.269 4.207 4.293 6.438.674 1.467.79 2.938 1.367 4.489 1.417 3.822 2.652 7.98 4.487 11.511.927 1.788 1.949 3.67 3.122 5.268.718.981 1.951 1.413 2.145 2.927-1.204 1.686-1.273 4.304-1.95 6.44-3.05 9.615-1.899 21.567 2.537 28.683 1.36 2.186 4.567 6.871 8.975 5.073 3.856-1.57 2.995-6.438 4.098-10.732.249-.973.096-1.689.585-2.341v.195l3.513 7.024c2.6 4.187 7.212 8.562 11.122 11.514 2.027 1.531 3.623 4.177 6.244 5.073v-.196h-.195c-.508-.791-1.303-1.119-1.951-1.755-1.527-1.497-3.225-3.358-4.487-5.073-3.556-4.827-6.698-10.11-9.561-15.609-1.368-2.627-2.557-5.523-3.709-8.196-.444-1.03-.438-2.589-1.364-3.122-1.263 1.958-3.122 3.542-4.098 5.854-1.561 3.696-1.762 8.204-2.341 12.878-.342.122-.19.038-.391.194-2.718-.655-3.672-3.452-4.683-5.853-2.554-6.07-3.029-15.842-.781-22.829.582-1.809 3.21-7.501 2.146-9.172-.508-1.666-2.184-2.63-3.121-3.903-1.161-1.574-2.319-3.646-3.124-5.464-2.09-4.731-3.066-10.044-5.267-14.828-1.053-2.287-2.832-4.602-4.293-6.634-1.617-2.253-3.429-3.912-4.683-6.635-.446-.968-1.051-2.518-.391-3.513.21-.671.508-.951 1.171-1.17 1.132-.873 4.284.29 5.462.779 3.129 1.3 5.741 2.538 8.392 4.294 1.271.844 2.559 2.475 4.097 2.927h1.756c2.747.631 5.824.195 8.391.975 4.536 1.378 8.601 3.523 12.292 5.854 11.246 7.102 20.442 17.21 26.732 29.269 1.012 1.942 1.45 3.794 2.341 5.854 1.798 4.153 4.063 8.426 5.852 12.488 1.786 4.052 3.526 8.141 6.05 11.513 1.327 1.772 6.451 2.723 8.781 3.708 1.632.689 4.307 1.409 5.854 2.34 2.953 1.782 5.815 3.903 8.586 5.855 1.383.975 5.64 3.116 5.852 4.879zM29.729 23.466c-1.431-.027-2.443.156-3.513.389v.195h.195c.683 1.402 1.888 2.306 2.731 3.513.65 1.367 1.301 2.732 1.952 4.097l.194-.193c1.209-.853 1.762-2.214 1.755-4.294-.484-.509-.555-1.147-.975-1.755-.556-.811-1.635-1.272-2.339-1.952z"/></svg>
+                    </div>
+                    <div class="tech-item" data-tooltip="Git">
+                        <svg viewBox="0 0 128 128" width="50" height="50">
+                            <path fill="#F34F29" d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Meus <span>Projetos</span></h2>
+                <p class="section-subtitle">Confira alguns dos projetos que desenvolvi</p>
+                
+                <div class="projects-grid" id="projectsGrid">
+                    <article class="project-card" data-group="1">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="currentColor" opacity="0.3">
+                                    <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                                </svg>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="Ver projeto">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="Ver código">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Estação Genesis</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis delectus sunt esse quod. Atque totam minus natus, sunt fugit repudiandae.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-group="1">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="currentColor" opacity="0.3">
+                                    <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                                </svg>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="Ver projeto">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="Ver código">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>LEES</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores iure at consequatur similique quas recusandae labore? Accusamus distinctio saepe optio.</p>
+                            <div class="project-tech">
+                                <span>Next.js</span>
+                                <span>Stripe</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-group="1">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="currentColor" opacity="0.3">
+                                    <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                                </svg>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="Ver projeto">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="Ver código">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>SIMTER</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic quibusdam et nemo fugiat repellendus consequatur voluptatum consectetur repellat saepe?</p>
+                            <div class="project-tech">
+                                <span>Vue.js</span>
+                                <span>Firebase</span>
+                                <span>Tailwind</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card hidden" data-group="2">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="currentColor" opacity="0.3">
+                                    <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                                </svg>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="Ver projeto">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="Ver código">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Perguntrilha</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime laboriosam excepturi ea rerum eum blanditiis saepe, eius autem reiciendis quo.</p>
+                            <div class="project-tech">
+                                <span>Socket.io</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card hidden" data-group="2">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="currentColor" opacity="0.3">
+                                    <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                                </svg>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="Ver projeto">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="Ver código">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Vibe Beat</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio asperiores quidem maiores, labore iure pariatur temporibus impedit placeat velit molestias!</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Chart.js</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card hidden" data-group="2">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="currentColor" opacity="0.3">
+                                    <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                                </svg>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="Ver projeto">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="Ver código">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Simple Games</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi est reprehenderit illo laudantium quia assumenda fugiat, error eligendi autem incidunt!</p>
+                            <div class="project-tech">
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="projects-cta">
+                    <button id="loadMoreBtn" class="btn btn-secondary">
+                        Ver mais projetos
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Minhas <span>Habilidades</span></h2>
+                <p class="section-subtitle">Soft skills que me destacam como profissional</p>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h3>Organização</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi animi, nam cupiditate temporibus quasi blanditiis molestias omnis iusto reprehenderit dicta.
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>Liderança</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo est inventore nesciunt corrupti repellendus similique esse facilis eaque quisquam beatae.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-people-group"></i>
+                        </div>
+                        <h3>Trabalho em Equipe</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quae amet veniam odio, accusamus minus illum nobis dolorum reiciendis voluptatem?</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Gestão de Tempo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam modi architecto ab unde consequatur optio. Saepe ipsa minima optio doloribus!</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Resolução de Problemas</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam modi architecto ab unde consequatur optio. Saepe ipsa minima optio doloribus!</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Comunicação</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iure sapiente sunt harum magni omnis. Ut iure totam necessitatibus optio!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <p>All Rights Reserved - Kauã Ribeiro</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home"><span>Kauã Ribeiro</span></a>
+                    <p>Desenvolvedor FullStack e Técnico em Telecomunicações, apaixonado por tecnologia e pela criação de soluções inovadoras.</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/Kauakim" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kaua-ribeiro17/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_kaua_rib/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/55359998260834" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; All Rights Reserved - Kauã Ribeiro</p>
+            </div>
+        </div>
     </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </button>
 
     <script src="./main.js"></script>
 </body>

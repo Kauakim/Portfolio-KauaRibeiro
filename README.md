@@ -35,7 +35,7 @@ Ele foi criado com o intuito de apresentar meus projetos, habilidades técnicas,
 python -m http.server 3000
 
 # Node.js
-npx live-server
+npx live-server --host=127.0.0.1 --port=3000
 ```
 
 Acesse: `http://localhost:3000`
