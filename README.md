@@ -22,9 +22,7 @@ Ele foi criado com o intuito de apresentar meus projetos, habilidades técnicas,
 4. **Tecnologias**
 5. **Projetos**
 6. **Habilidades**
-7. **Serviços**
-8. **Contato**
-9. **Footer**
+7. **Footer**
 
 ---
 
